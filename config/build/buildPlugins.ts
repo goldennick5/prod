@@ -1,11 +1,14 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import webpack from "webpack";
+import { BuildPaths } from "./types/config";
 
-export function buildPlugins(htmlPath: string): webpack.WebpackPluginInstance[] {
+export function buildPlugins(
+  paths: BuildPaths
+): webpack.WebpackPluginInstance[] {
   return [
     new HtmlWebpackPlugin({
-      template: htmlPath,
+      template: paths.html,
     }),
     new webpack.ProgressPlugin(),
   ];
