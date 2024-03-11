@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("this is working t3423tg3wtg23wg5");var e=document.createElement("div");document.body.appendChild(e).innerHTML="iwehfioweuhgioweghio"})();
